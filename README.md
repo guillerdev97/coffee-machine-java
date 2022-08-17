@@ -11,4 +11,4 @@ This program requires Java to compile and run.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/mobalic/coffee-machine-java/blob/main/LICENSE) for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/guillerdev97/coffee-machine-java/blob/main/LICENSE) for details.
