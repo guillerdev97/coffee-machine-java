@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CoffeeMachine {
     public static void main(String[] args) {
         while(true) {
-            System.out.println("Write action (buy, fill, remaining, exit):");
+            System.out.println("Write action (buy, fill, take, remaining, exit):");
 
             String action = scanner.nextLine();
 
@@ -14,6 +14,10 @@ public class CoffeeMachine {
 
                 case "fill":
                     fillMachine();
+                    break;
+
+                case "take":
+                    takeMoney();
                     break;
 
                 case "remaining":
@@ -189,6 +193,15 @@ public class CoffeeMachine {
         milk += addMilk;
         beans += addBeans;
         cups += addCups;
+    }
+
+    public static void takeMoney() {
+        if(money == 0) {
+            System.out.println("I don't have money to give you");
+            return;
+        }
+        System.out.println("I gave you $"+ money);
+        money = 0;
     }
 
     public static void machineInfo(int water, int milk, int beans, int cups, int money) {
